@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+.div1 {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: #eee;
+    transition: margin-top 0.5s, padding-top 1s 0.5s;
+
+}
+
+.div2 {
+    width: 400px;
+    height: 70px;
+    margin: 20px auto;
+    background-color: #d2d2d2;
+} 
+
+.div1:hover {
+    margin-top: 60px;
+    padding-top: 40px;
+}

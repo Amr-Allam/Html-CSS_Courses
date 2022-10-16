@@ -1,0 +1,91 @@
+.div1 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -250px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: perspective(600px);
+}
+
+.div1::before {
+    content: "Back";
+    background-color: #1592fc;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.div1::after {
+    content: "Front";
+    background-color: #fa3664;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.div1:hover {
+    transform: rotateY(-180deg);
+}
+
+/* ----------------------------------------------------- */
+
+.div2 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 50px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: perspective(600px);
+}
+
+.div2::before {
+    content: "Back";
+    background-color: #1592fc;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(180deg);
+}
+
+.div2::after {
+    content: "Front";
+    background-color: #fa3664;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.div2:hover {
+    transform: rotateX(180deg);
+}

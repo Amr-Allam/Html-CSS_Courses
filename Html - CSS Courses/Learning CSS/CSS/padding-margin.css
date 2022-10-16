@@ -1,0 +1,20 @@
+div {
+    padding: 100px; 
+/*
+    can take percentage values
+    padding: Top Right Bottom Left
+    if u wrote 1 value all will be the same value
+    if u wrote 2 values Top=Bottom , Left=Right
+    if u wrote 3 values the missing one takes the value of the opposite side
+    padding-top: , padding-bottom: , etc.. if i want one side only
+*/
+margin: 10px ; /* like padding but takes negative values */
+width: 70%;
+margin-left: auto; /* can make it 15% and margine-right will be the same */
+margin-right: auto;
+margin: auto;
+/*
+    will make the margine auto in all sides
+    margine depends on the length and width of the element
+*/
+}

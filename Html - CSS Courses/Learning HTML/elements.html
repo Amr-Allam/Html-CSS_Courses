@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="some elements"/>
+        <title>Elements</title>
+    </head>
+    <body>
+        <span>span</span> <!-- like a normal word but to make it an element to be used in CSS-->
+        <p>book <br> store</p> <!--to make a word in a new line in the same paragraph-->
+        <div> <!-- container for elements (same idea of span) -->
+            <h1>heading</h1>
+            <p>entities &lt; &gt; &amp; </p> <!-- entities: to use stuff u can't normally use in text like ( <> ) -->
+        </div>
+        <q>quote</q> <!-- quotes-->
+        <blockquote>blockquote</blockquote>
+        <button>button</button>
+        <div>
+            https://www.youtube.com/<wbr>playlist?list=PLDoPjvoNmBA<wbr>w_t_XWUFbBX-c9MafPk9ji <!-- wbr: to control where the line breaks if its too long -->
+        </div>
+        <p>سلام 2 welcome</p>
+        <p><bdi>سلام</bdi> 2 welcome</p> <!-- bdi: to isolate a word from the direction of the content-->
+        <code> <!-- to write a code in any programming language-->
+            var x=10
+            var y=20
+            console.log(x+y);
+        </code>
+        <pre>
+                pre
+            keeps the
+                    spaces u made
+        </pre>
+        <iframe src="form.html" width="800" height="500"></iframe> <!-- to open another webpage in the same page -->
+        <br>
+        <audio controls autoplay loop muted> <!-- can use more than one source to let the page pick the compatible file -->
+            <source src="" type=""> <!--all files have a MIME type-->
+            <source src="" type=""> <!-- put the same file with different extension -->
+            <source>
+            our browser doesn't support audio tags <!-- if the browser isn't compatible with any will only show this msg--> 
+        </audio>
+        <video src="" width="" height="" poster=""> <!-- can do everything u did in audio -->
+            <source>
+            <track src="myfile.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+    </body>
+</html>

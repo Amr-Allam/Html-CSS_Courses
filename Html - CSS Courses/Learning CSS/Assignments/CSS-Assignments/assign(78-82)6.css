@@ -1,0 +1,7 @@
+* {
+  font-size: 30px;
+}
+
+div div:nth-last-of-type(2):not(.no-need div) {
+  color: red;
+}

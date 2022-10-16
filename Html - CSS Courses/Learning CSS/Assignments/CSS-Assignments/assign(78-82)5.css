@@ -1,0 +1,7 @@
+* {
+  font-size: 30px;
+}
+
+div:nth-of-type(2) > p + div{
+  color: red;
+}

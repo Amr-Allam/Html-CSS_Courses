@@ -1,0 +1,27 @@
+/*
+Transition
+- Duration
+- Property
+- Delay
+- Timing Function
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    /* transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property: width;
+    transition-timing-function: linear; */
+    transition: all .5s 2s linear;
+}
+
+.one:hover {
+    width: 280px;
+    height: 120px;
+}

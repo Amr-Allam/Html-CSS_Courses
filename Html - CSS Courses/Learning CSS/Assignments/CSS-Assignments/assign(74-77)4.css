@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 750px;
+    height: 585px;
+    background-color: transparent;
+    display: grid;
+    grid-template: repeat(7, auto) / repeat(9, auto);
+}
+
+div {
+    background-color: #323234;
+    display: flex;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 8 / 1;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 1 / 5;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.div3 {
+    grid-area: 4 / 2 / 4 / 5;
+}
+
+.div4 {
+    grid-area: 7 / 2 / 7 / 5;
+}
+
+.div5 {
+    grid-area: 1 / 6 / 8 / 6;
+}
+
+.div6 {
+    grid-area: 7 / 6 / 7 / 10;
+}
+
+.E {
+    background-color: transparent;
+    grid-area: 1 / 1 / 8 / 5;
+    position: relative;
+}
+
+.cube1 {
+    width: 50px;
+    height: 50px;
+    background-color: #fea604;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    animation: cube1 6s linear infinite;
+}
+
+@keyframes cube1 {
+    50% {
+        transform: translate(0);
+    }
+    55.5% {
+        transform: translateX(-250px);
+    }
+    61% {
+        transform: translate(-250px, 250px);
+    }
+    66.5% {
+        transform: translate(0, 250px);
+    }
+    72% {
+        transform: translate(-250px, 250px);
+    }
+    75.5% {
+        transform: translate(-250px, 500px);
+    }
+    83% {
+        transform: translate(0, 500px);
+    }
+    88.5% {
+        transform: translate(-250px, 500px);
+    }
+    94% {
+        transform: translate(-250px, 0);
+    }
+    100% {
+        transform: translate(0)
+    }
+}
+
+.L {
+    background-color: transparent;
+    grid-area: 1 / 6 / 8 / 10;
+    position: relative;
+}
+
+.cube2 {
+    width: 50px;
+    height: 50px;
+    background-color: #fea604;
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    animation: cube2 6s linear infinite;
+    opacity: 0;
+}
+
+@keyframes cube2 {
+    12.5% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(-250px);
+        opacity: 1;
+    }
+    37.5% {
+        transform: translate(-250px, -500px);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-250px, -500px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

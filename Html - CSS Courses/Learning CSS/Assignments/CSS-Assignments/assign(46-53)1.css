@@ -1,0 +1,17 @@
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fe5527;
+    font-weight: bold;
+    font-size: 23px;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    background-color: #eee;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: -7px 0 0 0 #04a9f3,
+    7px 0 0 0 #fe5721;
+}

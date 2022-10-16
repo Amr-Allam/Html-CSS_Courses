@@ -1,0 +1,26 @@
+div {
+    width: 400px;
+    background-color: rgb(234, 240, 241);
+    padding: 10px;
+}
+
+span {
+    padding-left: 7px;
+    font-size: 25px;
+}
+
+.span1 {
+    border-left: 5px solid rgb(163, 105, 168);
+}
+
+.span2 {
+    width: 400px;
+    background-color: rgb(234, 240, 241);
+    padding: 10px;
+    visibility: hidden;
+    display: block;
+}
+
+.span3 {
+    border-left: 5px solid royalblue;
+}

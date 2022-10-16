@@ -1,0 +1,91 @@
+/*
+Text Colour
+-background-color
+-color
+Text Shadow
+text-shadow: H-shadow V-Shadow Blur Color
+*/
+
+.div1 {
+    font-size: 30px;
+    background-color: #f9f9f9;
+    text-shadow: 2px 2px 10px red;
+}
+
+/*
+Text Alignment
+Alignment
+Direction 
+Vertical Alignment
+*/
+
+.div2 {
+    font-size: 30px;
+    text-align: center;
+    direction: rtl; /* right to left */ 
+}
+
+img {
+    vertical-align: middle; /* baseline is the default */
+}
+
+/*
+Text Decoration
+Text Transformation
+*/
+
+.div3 {
+    font-size: 30px;
+    text-decoration: line-through; /* underline , overline , none */
+    text-transform: capitalize; /* uppercase , etc.. */ 
+}
+
+/*
+Text Spacing
+-Letter Spacing
+-Indentation
+-Line Height
+-Word Spacing + Wraping + White Space
+*/
+
+.div4 {
+    font-size: 30px;
+    letter-spacing: 5px; /* space between letters */
+    word-spacing: -30px; /* space between words */
+    text-indent: 100px; /* free space before the text */
+}
+
+.div5 {
+    background-color: rgb(193, 212, 230);
+    font-size: 30px;
+    line-height: 1.6; /* space between lines */ 
+    width: 300px;
+    white-space: nowrap;
+}
+
+.div6 {
+    font-size: 30px;
+    background-color: #eee;
+    width: 300px;
+    word-break: break-word; /* breaks the word to avoid overflow */
+}
+
+/*
+Text Overflow
+*/
+
+.div7 {
+    font-size: 30px;
+    background-color: #eee;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.div7:hover {
+    overflow: visible;
+}
+
+
+

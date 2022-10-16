@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #0d8fe3;
+    border-bottom-color: transparent;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: 4px solid #f0a10c;
+    border-bottom-color: transparent;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+div::after {
+    content: "";
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    border-radius: 50%;
+    border: 4px solid #06050a;
+    border-bottom-color: transparent;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-play-state: paused;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+div:hover,
+div:hover::before,
+div:hover::after {
+    animation-play-state: running;
+}

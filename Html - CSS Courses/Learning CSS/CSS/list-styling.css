@@ -1,0 +1,15 @@
+li {
+    background-color: #eee;
+    margin-bottom: 10px;
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url(https://placekitten.com/40/40);
+    /* list-style: armenian inside image(); (shorthand)  */
+} 
+
+
+/* ul {                (to unstyle it)
+    list-style: none;
+    padding-left: 0;
+    margin: 0;)
+} */

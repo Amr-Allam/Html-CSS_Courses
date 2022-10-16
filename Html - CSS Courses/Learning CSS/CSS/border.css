@@ -1,0 +1,34 @@
+.div1 {
+/* can control all 4 sides separately in all of them */
+background-color: rgb(226, 236, 245);
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border-width: 10px;
+    border-color: red green blue yellow;
+    border-style: solid dotted dashed solid;
+}
+
+.div2 {
+    background-color: rgb(226, 236, 245);
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border: 10px solid red; /* shorthand property: can't control all sides with it */
+}
+
+.div3 {
+    background-color: rgb(226, 236, 245);
+    width: 300px;
+    padding: 10px; /* affects width */
+    margin: auto;
+    border: 10px solid blue; /* affects width */
+    outline: 10px solid red; /* doesn't affect width (usually not used anymore , can't be customized like the border) */
+    border-radius: 20px;
+/* 
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+The (box-sizing) property allows us to include the padding and border in an element's total width and height.
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height.
+*/
+}

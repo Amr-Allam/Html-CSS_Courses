@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!--
+check Accessibility in lighthouse in browser , not always needed.
+ARIA: shorthand for Accessible Rich Internet Applications. 
+ARIA is a set of attributes you can add to HTML elements that define ways to make web content
+and applications accessible to users with disabilities who use assistive technologies (AT)
+-->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Accessibility intro"/>
+        <title>Accessibility</title>
+    </head>
+    <body>
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">Plan One</div> 
+        <!-- 
+            if i made it as a checkbox using javascript.
+            nothing will happen if i didn't do any of this but the screen reader wont understand.
+            tabindex: to switch between them with tab 
+        -->
+        <label id="plan1">Plan One label</label>
+        <div tabindex="0">Plan Two</div>
+        <div tabindex="0">Plan Three</div>
+    </body>
+</html>

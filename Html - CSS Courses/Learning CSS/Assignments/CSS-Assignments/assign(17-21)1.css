@@ -1,0 +1,7 @@
+div {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0.7px 0.7px #ff0000,
+    1.4px 1.4px #00bbff,
+    2.1px 2.1px #8646c5;
+}

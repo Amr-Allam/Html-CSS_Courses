@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="making a form" />
+    <title>form</title>
+</head>
+
+<body>
+    <form action="" method="get" target="_blank"> <!-- to collect user input , action is where the data is sent , method: get->data sent appears in URL / POST->data sent doesn't appear in URL
+    novalidate (attribute): if i don't want to fill the form to send it , targe="blank": opens a new page when u submit instead of removing ur info -->
+        <div>
+            <label>Subject</label>
+            <input type="text" name="subject"> <!-- name: used to know whats everything when its sent to the server ,  can name it anything i want -->
+        </div>
+        <br>
+        <div>
+            <label>Username</label>
+            <input type="text" required placeholder="Enter username" name="user" autofocus> <!-- autofocus: when u open the page it focuses on a field to write in it -->
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password" required name="pass" minlength="6" maxlength="20"> <!-- min and max length of characters u can type -->
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" required placeholder="Write a valid Email" value="o@nn.sa" name="mail">
+        </div>
+        <br>
+        <div>
+            <label>Number</label>
+            <input type="number" name="number" min="10" max="100" step="10">
+        </div>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="Color">
+        </div>
+        <br>
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="80">
+        </div>
+        <br>
+        <div>
+            <label>Read only</label> <!-- still sent when u submit -->
+            <input type="text" name="user" value="Amr" readonly>
+        </div>
+        <br>
+        <div>
+            <label>disabled iput</label>
+            <input type="email" value="o@nn.sa" name="Email" disabled> <!-- disabled: wont be sent -->
+        </div>
+        <hr>
+        <div>
+            <input type="radio" name="OS" value="Windows"> <!-- radio: can only check one of them -->
+            <label>Windows</label>
+        </div>
+        <div>
+            <input type="radio" name="OS" value="Linux" checked> <!-- checked: checks this radio auto when u open the page -->
+            <label>Linux</label>
+        </div>
+        <div>
+            <input id="mac" type="radio" name="OS" value="Mac"> <!-- put an id in input and for in label to connect them-->
+            <label for="mac">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <input id="win" type="checkbox" name="OS" value="Windows"> <!-- check: like radio but can check all of them -->
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input id="lin" type="checkbox" name="OS" value="Linux" checked>
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input id="mac2" type="checkbox" name="OS" value="Mac">
+            <label for="mac2">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <label for="books">Choose a book</label>
+            <select name="Books" id="books" multiple> <!-- multiple: to select more than one option -->
+                <optgroup label="Sci-Fi">
+                    <option value="1">Book1</option> <!-- whats sent is the value not the text -->
+                    <option value="2">Book2</option>
+                    <option value="3">Book3</option>
+                </optgroup>
+                <optgroup label="Fantasy">
+                    <option value="4" selected>Book4</option> <!-- to auto select this option when the u open the page -->
+                    <option value="5">Book5</option>
+                    <option value="6">Book6</option>
+                </optgroup>
+            </select>
+            <hr>
+                <textarea name="subject" cols="30" rows="3"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Upload</label>
+            <input type="file">
+        </div>
+        <hr>
+        <div>
+            <label>Search</label>
+            <input type="search"> <!-- difference between search and text is there is an (x) button to clear the field -->
+        </div>
+        <hr>
+        <div>
+            <label>Url</label>
+            <input type="url">
+        </div>
+        <hr>
+        <div>
+            <label>Date</label>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <label>Month</label>
+            <input type="month">
+        </div>
+        <br>
+        <div>
+            <label>Time</label>
+            <input type="time">
+        </div>
+        <hr>
+        <div>
+            <input list="programming" name="prog"> <!-- difference between datalist and select is i can search in a datalist -->
+            <datalist id="programming">
+                <option value="Python"> <!--no need to write a closing tag-->
+                <option value="PHP">
+                <option value="C#">
+                <option value="C++"> 
+            </datalist>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" value="Save">
+            <input type="submit">
+            <input type="hidden" value="amr"> <!-- for stuff that doesn't need to be visible for users-->
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* 
+Float (there is better things later)
+Clear
+*/
+
+.parent {
+    background-color: red;
+    padding: 10px;
+
+}
+
+.parent .div1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: 25%;
+    float: left; /* used for positioning , ex: to make div next to each other */
+}
+
+.clear {
+    clear: both; /* to reset the layout after the float */
+}
+
+/*
+Calc
+*/
+
+.body2 {
+    margin: 0;
+}
+
+.div2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: red;
+    opacity: 0.5; /* to make the whole element less visible */
+    float: left;
+    width: calc((100% - 75px) / 4);
+    margin-left: 15px;
+}
+
+/*
+content width is: 100%
+5 spaces , 1% * 5 => 5% from content width
+95% available space
+4 elements the width is: 95% / 4 = 23.75
+
+if i want it with pixels:
+content width is: 100%
+5 spaces , 15px * 5 => 75px from content width
+100% - 75px available space
+4 elements the width is: (100% - 75px) / 4
+
+*/
+

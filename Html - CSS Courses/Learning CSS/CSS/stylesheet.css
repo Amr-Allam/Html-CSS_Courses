@@ -1,0 +1,34 @@
+p {         /*(.) before the name if its a class , (#) if its an id */
+    color: rgb(255 0 0 / 20%);
+    font-size: 40px;
+}
+
+.special {
+    color: aquamarine;
+}
+
+div {
+    font-size: large; 
+    color:rgb(255  0  0 );
+    background-image: url("../imgs/1920x1080_px_black_flowers_nature_Simple_Simple_Background-644249.jpg");
+    background-repeat: no-repeat; /* repeat , no-repeat , repeat-x , repeat-y */
+    background-attachment: scroll; /* lets the image move with u when u scroll */
+    background-position: center top; /* left center , right bottom , etc.. */
+}  
+/*  rgba: (red green Blue / A)
+    A (alpha channel)
+    hex code: #(RR)(GG)(BB) 0->f 
+*/
+
+.div2 {
+    background-image: url("../imgs/1920x1080_px_black_flowers_nature_Simple_Simple_Background-644249.jpg");
+    background-repeat: no-repeat;
+    background-position: 400px 600px; /* (from left  from top) , can use percentage (30% 50%) */
+    background-size: contain; 
+    /*
+    background-size: to control the size of the image 
+    cover: to cover all of that part
+    contain: covers all of that part but makes the image fully visible 
+    can use pixels and percentages like background-position
+    */
+}

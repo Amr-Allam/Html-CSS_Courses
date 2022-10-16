@@ -1,0 +1,15 @@
+a {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(64, 199, 204);
+    border-bottom: 5px solid rgb(28, 134, 138);
+}

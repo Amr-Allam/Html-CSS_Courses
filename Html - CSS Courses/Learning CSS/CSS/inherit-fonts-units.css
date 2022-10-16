@@ -1,0 +1,46 @@
+.div1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(145, 69, 69);
+    font-family: 'Edu VIC WA NT Beginner', cursive; /* font-family of the copied font from google fonts */ 
+
+}
+
+.div1 p {
+    border: 2px solid;
+    border-color: inherit;
+    padding: inherit;
+}
+
+/*
+CSS Units
+-px
+-em => Time (size of parent element X em)
+-rem => Root Time (size of html X rem)
+-vw => View Port Width (1vw = 1% of the view port width)
+-vh => View Port Height (1vh = 1% of the view port height)
+-percentage
+(Default font size for web page is 16px)
+*/
+
+span {
+    /* font-size: 2em; (32px)*/
+    font-size: 5vw; /* changes with changes width of the browser */
+}
+
+/* 
+Font Style 
+Font Variant 
+Font Weight
+*/
+
+.div2 {
+    font-style: italic;
+    font-variant: small-caps; /* smaller than uppercase */ 
+    font-weight: bold;
+}
+
+.div3 {
+    text-transform: uppercase;
+}

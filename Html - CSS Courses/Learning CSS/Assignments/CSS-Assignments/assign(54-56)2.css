@@ -1,0 +1,30 @@
+.parent div {
+    width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+input {
+    width: 600px;
+    height: 23px;
+    border: none;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    caret-color: red;
+}
+
+.parent div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+    padding: 20px;
+    z-index: -1;
+    background-image: linear-gradient(to right,
+    #de4a3e 50%,
+    #0f8f85 50%);
+}

@@ -1,0 +1,16 @@
+/*
+Filters
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.3s;
+    filter: grayscale(100%); /* grayscale - blur - invert (check filters list) */
+}
+
+img:hover {
+    filter: grayscale(0);
+}

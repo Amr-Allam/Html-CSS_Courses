@@ -1,0 +1,28 @@
+div {
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    left: 15px;
+    top: 15px;
+    z-index: 1;
+/*
+-without it was gonna be begind all of them bec. its the first one written in html
+-must write a position attribute before it
+*/
+}
+
+.two {
+    background-color: green;
+    left: 12px;
+    top: 12px;
+}
+
+.three {
+    background-color: blue;
+}

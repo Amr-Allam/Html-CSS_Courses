@@ -1,0 +1,9 @@
+div {
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    max-width: 400px;
+    width: fit-content;
+    height: 20px;
+    overflow: hidden;
+}

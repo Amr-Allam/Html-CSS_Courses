@@ -1,0 +1,105 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    white-space: wrap;
+}
+
+h3 {
+    color: #aeb3c2;
+    padding: 10px 0 25px 0;
+}
+
+span {
+    font-weight: bold;
+    display: block;
+    line-height: 30px;
+}
+
+p {
+    line-height: 30px;
+}
+
+.parent {
+    background-color: #eeeeee;
+    padding: 20px;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(8, 1fr);
+    grid-template-areas: 
+    "osama osama osama osama ahmed ahmed shady shady"
+    "m-ibrahim m-ibrahim mahmoud mahmoud mahmoud mahmoud shady shady"
+    "m-ibrahim m-ibrahim ezz ezz ezz ezz shady shady"
+    "m-sayed m-sayed ibrahim ibrahim gamal gamal eman eman";
+    gap: 10px;
+}
+
+.parent div {
+    padding: 20px;
+    border-bottom: 3px solid red;
+    position: relative;
+    box-shadow: 0 0 3px 3px #0000004a;
+}
+
+.parent div::after {
+    content: " '' ";
+    font-size: 70px;
+    color: #b3b3b3;
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    transform: rotate(10deg);
+}
+
+.osama {
+    grid-area: osama;
+    background-color: white;
+}
+
+.ahmed {
+    grid-area: ahmed;
+    background-color: white;
+}
+
+.shady {
+    grid-area: shady;
+    background-color: #000000;
+    color: white;
+}
+
+.m-ibrahim {
+    grid-area: m-ibrahim;
+    background-color: white;
+}
+
+.mahmoud {
+    grid-area: mahmoud;
+    background-color: #000000;
+    color: white;
+}
+
+.ezz {
+    grid-area: ezz;
+    background-color: white;
+}
+
+.m-sayed {
+    grid-area: m-sayed;
+    background-color: white;
+}
+
+.ibrahim {
+    grid-area: ibrahim;
+    background-color: #000000;
+    color: white;
+}
+
+.gamal {
+    grid-area: gamal;
+    background-color: white;
+}
+
+.eman {
+    grid-area: eman;
+    background-color: white;
+}
