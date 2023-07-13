@@ -14,11 +14,7 @@ span {
 }
 
 .span2 {
-    width: 400px;
-    background-color: rgb(234, 240, 241);
-    padding: 10px;
     visibility: hidden;
-    display: block;
 }
 
 .span3 {
